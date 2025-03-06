@@ -1,0 +1,27 @@
+[project]
+name = "ofossa"
+version = "0.1.0"
+description = "CLI tool for testing and sending events to message brokers"
+authors = [
+    {name = "guitvcer",email = "abdrakhman.galaxy.s2@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "typer (>=0.15.2,<0.16.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+flake8 = "^7.1.2"
+ruff = "^0.9.9"
+wemake-python-styleguide = "^1.0.0"
+mypy = "^1.15.0"
+pre-commit = "^4.1.0"
+
